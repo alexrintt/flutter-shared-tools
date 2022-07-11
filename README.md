@@ -1,3 +1,17 @@
+## How to install
+
+(Recommended) Fork and depend of your fork instead using this one. This is a really unstable installation since it's not from _pub.dev_.
+
+```yaml
+dependencies:
+  # ...
+  flutter_shared_tools:
+    git:
+      url: https://github.com/lakscastro/flutter-shared-tools
+      ref: master
+  # ...
+```
+
 ## Features
 
 Check out full list of features.
