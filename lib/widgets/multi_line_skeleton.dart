@@ -10,6 +10,7 @@ class MultiLineSkeleton extends StatelessWidget {
     this.heightDashArray = const <double>[0.5],
     this.widthDashArray = const <double>[1, 0.8],
     this.borderRadius,
+    this.spacing = k4dp,
   }) : super(key: key);
 
   final double height;
@@ -17,6 +18,7 @@ class MultiLineSkeleton extends StatelessWidget {
   final List<double> heightDashArray;
   final List<double> widthDashArray;
   final double? borderRadius;
+  final double spacing;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +34,7 @@ class MultiLineSkeleton extends StatelessWidget {
               child: SkeletonAnimation.smooth(borderRadius: borderRadius),
             ),
           ),
-          if (index < count - 1) const Padding(padding: EdgeInsets.all(k2dp)),
+          if (index < count - 1) Padding(padding: EdgeInsets.all(spacing / 2)),
         ]
       ],
     );
