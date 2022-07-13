@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
 
 extension ThemeAlias on BuildContext {
-  bool get isDark => Theme.of(this).brightness == Brightness.dark;
+  ThemeData get theme => Theme.of(this);
 
-  ColorScheme get colorScheme => Theme.of(this).colorScheme;
-  TextTheme get textTheme => Theme.of(this).textTheme;
-  IconThemeData get iconTheme => Theme.of(this).iconTheme;
-  IconThemeData get primaryIconTheme => Theme.of(this).primaryIconTheme;
-  Color get primaryColor => Theme.of(this).primaryColor;
+  bool get isDark => theme.brightness == Brightness.dark;
+
+  ColorScheme get colorScheme => theme.colorScheme;
+  TextTheme get textTheme => theme.textTheme;
+  IconThemeData get iconTheme => theme.iconTheme;
+  IconThemeData get primaryIconTheme => theme.primaryIconTheme;
+  Color get primaryColor => theme.primaryColor;
   BottomNavigationBarThemeData get bottomNavigationBarTheme =>
-      Theme.of(this).bottomNavigationBarTheme;
+      theme.bottomNavigationBarTheme;
 
   Color get onPrimary => colorScheme.onPrimary;
-  AppBarTheme get appBarTheme => Theme.of(this).appBarTheme;
+  AppBarTheme get appBarTheme => theme.appBarTheme;
   Color? get appBarShadowColor => appBarTheme.shadowColor;
+  Color? get scaffoldBackgroundColor => theme.scaffoldBackgroundColor;
 }
