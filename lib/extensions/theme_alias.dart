@@ -16,8 +16,9 @@ extension ThemeAlias on BuildContext {
   Color get onPrimary => colorScheme.onPrimary;
   AppBarTheme get appBarTheme => theme.appBarTheme;
   Color? get appBarShadowColor => appBarTheme.shadowColor;
-  Color? get scaffoldBackgroundColor => theme.scaffoldBackgroundColor;
-  Color? get tertiary => theme.colorScheme.tertiary;
-  Color? get onTertiary => theme.colorScheme.onTertiary;
-  Color? get onBackground => theme.colorScheme.onBackground;
+  Color get scaffoldBackgroundColor => theme.scaffoldBackgroundColor;
+  Color get tertiary => theme.colorScheme.tertiary;
+  Color get onTertiary => theme.colorScheme.onTertiary;
+  Color get onBackground => theme.colorScheme.onBackground;
+  Color get dividerColor => theme.dividerColor;
 }
