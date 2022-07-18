@@ -10,3 +10,4 @@ linter:
     prefer_single_quotes: true
     always_use_package_imports: false
     prefer_relative_imports: true
+    always_specify_types: true

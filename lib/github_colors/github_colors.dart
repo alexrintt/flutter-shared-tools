@@ -14,12 +14,13 @@ enum GitHubColorScheme {
   lightColorblind,
 }
 
-const kGitHubLight = GitHubLightColors();
-const kGitHubDarkDimmed = GitHubDarkDimmedColors();
-const kGitHubDark = GitHubDarkColors();
-const kGitHubLightColorblind = GitHubLightColorblindColors();
+const GitHubColors kGitHubLight = GitHubLightColors();
+const GitHubColors kGitHubDarkDimmed = GitHubDarkDimmedColors();
+const GitHubColors kGitHubDark = GitHubDarkColors();
+const GitHubColors kGitHubLightColorblind = GitHubLightColorblindColors();
 
-const kGitHubMapColors = <GitHubColorScheme, GitHubColors>{
+const Map<GitHubColorScheme, GitHubColors> kGitHubMapColors =
+    <GitHubColorScheme, GitHubColors>{
   GitHubColorScheme.dark: kGitHubDark,
   GitHubColorScheme.darkDimmed: kGitHubDarkDimmed,
   GitHubColorScheme.light: kGitHubLight,
