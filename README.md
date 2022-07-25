@@ -7,7 +7,7 @@ dependencies:
   # ...
   flutter_shared_tools:
     git:
-      url: https://github.com/lakscastro/flutter-shared-tools
+      url: https://github.com/alexrintt/flutter-shared-tools
       ref: master
   # ...
 ```
@@ -62,7 +62,7 @@ Navigator.of(context).maybePop(...);
 scrollController.addOffsetListener(
   () {
     loadMoreItemFromApi(); // Will be called everytime scroll reaches the bottom
-  }, 
+  },
   context.height / 2, // Optionally set an offset from the bottom to load before it reaches the real bottom
 );
 ```
@@ -151,6 +151,7 @@ const double k8dp = 8 * 2.0;
 const double k9dp = 9 * 2.0;
 // ...available up to [k40dp]
 ```
+
 <br>
 
 <samp>
@@ -159,9 +160,9 @@ const double k9dp = 9 * 2.0;
   Open Source
 </h2>
 <p align="center">
-  <sub>Copyright © 2022-present, Laks Castro.</sub>
+  <sub>Copyright © 2022-present, Alex Rintt.</sub>
 </p>
-<p align="center">Flutter Shared Tools <a href="https://github.com/lakscastro/flutter-shared-tools/blob/master/LICENSE">is MIT licensed 💖</a></p>
+<p align="center">Flutter Shared Tools <a href="https://github.com/alexrintt/flutter-shared-tools/blob/master/LICENSE">is MIT licensed 💖</a></p>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/51419598/178327667-15a00cd0-60c5-485f-8a0e-68c92545907b.png" width="35" />
 </p>

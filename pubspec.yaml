@@ -1,7 +1,7 @@
 name: flutter_shared_tools
 description: A set of Flutter tools I usually make use in my projects.
 version: 0.1.0
-homepage: https://github.com/lakscastro/flutter-shared-tools
+homepage: https://github.com/alexrintt/flutter-shared-tools
 
 environment:
   sdk: ">=2.17.0 <3.0.0"
