@@ -12,25 +12,17 @@ dependencies:
   # ...
 ```
 
+And use as:
+
+```dart
+import 'package:flutter_shared_tools/flutter_shared_tools.dart';
+```
+
 ## Features
 
 Check out full list of features.
 
 ### Available extensions
-
-- `ApplyIfNotNull`.
-
-```dart
-// Single line solution:
-someNullValue?.apply((T value) => executeOnlyIfItsNotNull(value)) ?? otherwise();
-
-// Instead of:
-if (someNullValue != null) {
-  executeOnlyIfItsNotNull(someNullValue!);
-} else {
-  otherwise();
-}
-```
 
 - `MediaQueryAlias`.
 
@@ -97,15 +89,6 @@ const kGitHubDark = GitHubDarkColors();
 const kGitHubLightColorblind = GitHubLightColorblindColors();
 ```
 
-### Utilities
-
-- _Sem Ver_ masking function. Useful to work with database versions (Which accepts only integers).
-
-```dart
-maskVersion('v0.1.0'); // 256
-unmarkVersion(256); // 'v0.1.0'
-```
-
 ### Widgets
 
 - `SkeletonAnimation`. Useful to display as loading indicators rather than the `CircularProgressIndicator()`.
@@ -134,22 +117,6 @@ const BorderRadius kBRadius2 = BorderRadius.all(kRadius2);
 const Radius kRadius8 = Radius.circular(8);
 const Radius kRadius4 = Radius.circular(4);
 const Radius kRadius2 = Radius.circular(2);
-```
-
-- DP constants.
-
-```dart
-const double k0dp = 0 * 2.0;
-const double k1dp = 1 * 2.0;
-const double k2dp = 2 * 2.0;
-const double k3dp = 3 * 2.0;
-const double k4dp = 4 * 2.0;
-const double k5dp = 5 * 2.0;
-const double k6dp = 6 * 2.0;
-const double k7dp = 7 * 2.0;
-const double k8dp = 8 * 2.0;
-const double k9dp = 9 * 2.0;
-// ...available up to [k40dp]
 ```
 
 <br>
