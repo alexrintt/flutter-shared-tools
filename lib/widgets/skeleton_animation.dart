@@ -1,16 +1,15 @@
+import 'package:dart_shared_tools/dart_shared_tools.dart';
 import 'package:flutter/material.dart';
-
-import '../flutter_shared_tools.dart';
 
 class SkeletonAnimation extends StatefulWidget {
   const SkeletonAnimation({
-    Key? key,
+    super.key,
     required this.child,
     this.curve = Curves.fastOutSlowIn,
     this.borderRadius = BorderRadius.zero,
     this.shimmerDuration = 1000,
     this.backgroundColor = Colors.black,
-  }) : super(key: key);
+  });
 
   factory SkeletonAnimation.smooth({
     double? borderRadius,
