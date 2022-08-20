@@ -1,4 +1,4 @@
-/// [version] should be a string in the format of 'vX.Y.Z' where X, Y, Z are
+/// [version] should be a string in the format of 'vX.Y.Z' or simply 'X.Y.Z' where X, Y, Z are
 /// integers representing the major, minor, and patch versions respectively.
 ///
 /// For example, 'v1.2.3' represents version 1.2.3.
@@ -37,5 +37,6 @@ String unmaskVersion(int version, {int maxBits = 8}) {
   return 'v$major.$minor.$patch';
 }
 
+/// Alias for `maskVersion(version, maxBits: maxBits = 8)`
 int semVer(String version, {int maxBits = 8}) =>
     maskVersion(version, maxBits: maxBits);
