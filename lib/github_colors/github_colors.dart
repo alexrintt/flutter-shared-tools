@@ -1,11 +1,12 @@
-/// All data were scraped from official primer interface guidelines on variables page:
-/// https://primer.style/primitives/colors
 import 'package:flutter/cupertino.dart';
 
 import './dark.dart' as dark_theme;
 import './dark_dimmed.dart' as dark_dimmed_theme;
 import './light.dart' as light_theme;
 import './light_colorblind.dart' as light_colorblind_theme;
+
+/// All data were scraped from official primer interface guidelines on variables page:
+/// https://primer.style/primitives/colors
 
 enum GitHubColorScheme {
   darkDimmed,

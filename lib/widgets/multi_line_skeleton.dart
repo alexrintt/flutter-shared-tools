@@ -1,4 +1,3 @@
-import 'package:dart_shared_tools/dart_shared_tools.dart';
 import 'package:flutter/material.dart';
 
 import '../flutter_shared_tools.dart';
@@ -36,7 +35,7 @@ class MultiLineSkeleton extends StatelessWidget {
             ),
           ),
           if (index < count - 1) Padding(padding: EdgeInsets.all(spacing / 2)),
-        ]
+        ],
       ],
     );
   }

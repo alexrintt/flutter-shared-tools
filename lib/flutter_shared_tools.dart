@@ -1,4 +1,4 @@
-library flutter_shared_tools;
+export 'package:dart_shared_tools/dart_shared_tools.dart';
 
 export './constant/constant.dart';
 export './extensions/extensions.dart';
